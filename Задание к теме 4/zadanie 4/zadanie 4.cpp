@@ -1,6 +1,6 @@
-﻿#include <stdio.h> //Подключение библиотеки ввода/вывода
+﻿#include <stdio.h> 
 #include <math.h>
-#include <stdlib.h> //Подключение библиотеки
+#include <stdlib.h> 
 
 int main()
 {
