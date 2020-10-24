@@ -5,11 +5,11 @@ int main()
 {
 	double A = 42, B = 121, C = 61, AC, BC, P;
 	AC = fabs(C - A);
-	printf("%f\n", AC);
+	printf("%lf\n", AC);
 	BC = fabs(C - B);
-	printf("%f\n", BC);
+	printf("%lf\n", BC);
 	P = AC * BC;
-	printf("%f\n", P);
+	printf("%lf\n", P);
 	system("pause");
 	return 0;
 }
