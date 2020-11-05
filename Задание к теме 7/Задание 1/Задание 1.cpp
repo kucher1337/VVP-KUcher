@@ -1,15 +1,14 @@
 ﻿#include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
-#include <math.h>
 int main()
 {
-float c;
+	float a;
 	setlocale(LC_ALL, "Rus");
-	printf_s("Значение переменной в градусах: ");
-	scanf_s("%lf", &c);
-	c = c * 2;
-	printf_s("%lf\n", c);
+	printf_s("Значение переменной в градусах:");
+	scanf_s("%f", &a);
+	a = (a * 3.14) / 180;
+	printf_s("%.lf\n", a);
 	system("pause");
 	return 0;
 }
