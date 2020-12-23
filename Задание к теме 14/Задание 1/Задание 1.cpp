@@ -1,6 +1,5 @@
 ﻿#include <stdio.h>
 #include <locale.h>
-
 int main()
 {
 	double x, y, z, k, B, A;
@@ -19,10 +18,8 @@ int main()
 		y= B;
 			printf_s("Результат: %lf", y);
 		}
-
 	}
 	else
 		printf_s("Неверно");
-
 	return 0;
 }
