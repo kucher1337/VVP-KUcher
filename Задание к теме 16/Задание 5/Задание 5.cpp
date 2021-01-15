@@ -11,12 +11,14 @@ int main()
 		printf("mass[%d] = ", b);
 		scanf_s("%d", &mass[b]);
 	}
-	for (b = 1; b <= (a / 2); b++) {
+	b = 1;
+	while (b <= a) {
 		printf_s("% i", mass[b]);
-		printf_s("% i", mass[a - b + 1]);
+		b = b + 2;
 	}
-	if (a % 2 == 1) {
-		printf_s("% i", mass[a / 2 + 1]);
+	a = a / 2;
+	for (b = a; b >= 1; b--) {
+		printf_s("% i", mass[b * 2]);
 	}
 	return 0;
 }

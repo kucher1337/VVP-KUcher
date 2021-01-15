@@ -2,7 +2,7 @@
 #include <locale.h>
 int main()
 {
-	int a, b, mass[100];
+	int a, b, c, mass[100];
 	setlocale(LC_ALL, "Rus");
 	printf("Количество :");
 	scanf_s("%d", &a);
@@ -11,12 +11,16 @@ int main()
 		printf("mass[%d] = ", b);
 		scanf_s("%d", &mass[b]);
 	}
-	for (b = 1; b <= (a / 2); b++) {
-		printf_s("% i", mass[b]);
-		printf_s("% i", mass[a - b + 1]);
+	c = mass[2] - mass[1];
+	b = 2;
+	while ((mass[b] - mass[b - 1]) == c) {
+		b = b + 1;
 	}
-	if (a % 2 == 1) {
-		printf_s("% i", mass[a / 2 + 1]);
+	if (b == a + 1) {
+		printf_s("Является ар. пр.: %d", c);
 	}
+	else
+		printf_s("Не является ар. пр. : 0");
 	return 0;
 }
+
